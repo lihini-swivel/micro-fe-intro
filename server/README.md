@@ -16,13 +16,15 @@ Trying authorized routes without a JWT will result in a 401.
 
 ```
 $ curl http://localhost:8080/authorized
-$ # result -> {"statusCode":401,"message":"Unauthorized"}                                 
+$ # result -> {"statusCode":401,"message":"Unauthorized"}
 ```
 
 Use the `/auth/login` route to login.
 
 ```
-$ # POST /auth/login
+$
+
+# POST /auth/login
 $ curl -X POST http://localhost:8080/auth/login -d '{"username": "maria", "password": "123"}' -H "Content-Type: application/json"
 $ # result -> {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2Vybm... }
 ```
