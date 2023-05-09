@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import './index.scss'
 import Header from 'home/Header'
@@ -18,9 +18,9 @@ const App = () => {
         <Header />
 
         <div className='my-10'>
-          <Switch>
-            <Route path='/product/:id' component={PDPContent} />
-          </Switch>
+          <Routes>
+            <Route path='/product/:id' element={<PDPContent />} />
+          </Routes>
         </div>
         <Footer />
       </div>

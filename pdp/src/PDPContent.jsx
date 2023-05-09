@@ -9,8 +9,9 @@ export default function PDPContent() {
   }
 
   useEffect(() => {
+    // id !== null ? setProduct(getProductById(id)) : setProduct(null)
     if (id) {
-      getProductById(id).then((prod) => {
+      getProductById(id)?.then((prod) => {
         setProduct(prod)
       })
     } else {
