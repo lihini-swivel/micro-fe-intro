@@ -6,6 +6,7 @@ import './index.scss'
 import Header from './Header'
 import Footer from './Footer'
 import HomeContent from './HomeContent'
+import MainLayout from './MainLayout'
 
 import 'remixicon/fonts/remixicon.css'
 
@@ -18,4 +19,4 @@ const App = () => (
     <Footer />
   </div>
 )
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(<MainLayout />, document.getElementById('app'))
