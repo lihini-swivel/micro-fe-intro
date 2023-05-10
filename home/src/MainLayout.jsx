@@ -12,10 +12,6 @@ import 'remixicon/fonts/remixicon.css'
 
 export default function MainLayout() {
   return (
-    // <div>
-    //   <h1>my test</h1>
-    //   <PDPContent />
-    // </div>
     <Router>
       <div className='mt-10 text-3xl mx-auto max-w-6xl'>
         <Header />

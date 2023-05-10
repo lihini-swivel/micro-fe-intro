@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import MiniCart from 'cart/MiniCart'
 import Login from 'cart/Login'
@@ -9,7 +10,8 @@ export default function Header({ app }) {
     <div className='p-5 bg-blue-500 text-white text-3xl font-bold'>
       <div className='flex'>
         <div className='flex-grow '>
-          Fidget spinner world
+          <Link to='/'>Fidget spinner world</Link>|
+          <Link to={'/cart'}>Cart</Link>|
           {/* <div>
             <LogOut />
           </div> */}
