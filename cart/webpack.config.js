@@ -51,6 +51,7 @@ module.exports = (_, argv) => ({
       exposes: {
         './cart': './src/cart.js',
         './Login': './src/Login.jsx',
+        './LogOut': './src/LogOut.jsx',
         './MiniCart': './src/MiniCart.jsx',
       },
       shared: {

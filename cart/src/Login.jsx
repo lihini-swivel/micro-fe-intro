@@ -40,18 +40,20 @@ export default function Login() {
           />
           <button
             className='bg-green-900 text-white py-2 px-5 rounded-md text-sm mt-5'
-            onClick={() => login(userName, password)}
+            onClick={() =>
+              login(userName, password).then(() => setShowLogin(!showLogin))
+            }
             id='loginbtn'
           >
             Login
           </button>
-          <button
+          {/* <button
             className='outline  outline-1 outline-green-900 text-black py-2 px-5 rounded-md text-sm mt-5'
             onClick={() => setShowLogin(!showLogin)}
             id='loginbtn'
           >
             close
-          </button>
+          </button> */}
         </div>
       )}
     </>
